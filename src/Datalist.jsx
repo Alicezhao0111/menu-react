@@ -83,18 +83,18 @@ function Datalist() {
     }
 
   return (
-    <div>
-      <table>
+    <div style={{height:"100vh"}}>
+      <table style={{backgroundColor: '#f7f5f2', margin:"auto", marginTop:"150px"}}>
         <thead>
-          <tr>
-            <th scope="col">品項</th>
-            <th scope="col">描述</th>
-            <th scope="col">價格</th>
-            <th scope="col">庫存</th>
+          <tr style={{backgroundColor: '#B97836', color:'white'}}>
+            <th scope="col" className="title">品項</th>
+            <th scope="col" className="title">描述</th>
+            <th scope="col" className="title">價格</th>
+            <th scope="col" className="title">庫存</th>
           </tr>
         </thead>
 
-        <tbody>
+        <tbody style={{color: '#893f04'}}>
             {
               menu.map((item)=>{
                 return <tr key = {item.id}>
